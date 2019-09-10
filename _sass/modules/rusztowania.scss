@@ -1,6 +1,15 @@
 @import './../vars.scss';
 
 .faq-section {
+	background-color: rgba(10, 10, 10, 0.98);
+	background-image: url('https://cdn.stocksnap.io/img-thumbs/960w/NRSU0MZCMT.jpg');
+	background-size: cover;
+	background-blend-mode: overlay;
+	color: #fff;
+	min-height: 750px;
+	max-height: 750px;
+	overflow: hidden;
+
 	.section__title {
 		text-align: center;
 	}
@@ -11,14 +20,22 @@
 
 		li {
 			display: block;
-			margin-bottom: 0.5rem;
+			margin-bottom: 1rem;
 		}
 
 		&__question {
+			padding-left: 0;
 			width: 100%;
 			text-align: left;
 
+			background: none;
+			color: #fff;
+
+			border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+
 			i {
+				float: left;
+				margin-right: 1rem;
 				transition: 150ms all ease-in-out;
 			}
 
@@ -26,12 +43,38 @@
 				i {
 					transform: rotate(90deg);
 				}
+
+				& + .faq__answer {
+					padding: 1rem calc(1rem + 14px);
+					height: 160px;
+				}
 			}
 		}
 
 		&__answer {
+			height: 0;
+			padding: 0 calc(1rem + 14px);
+			display: block;
+
 			font-family: 'Rubik', sans-serif;
-			line-height: 1.25em;
+			background: rgba(255, 255, 255, 0.1);
+			backdrop-filter: blur(6px);
+
+			font-size: 14px;
+			line-height: 1.5em;
+
+			transition: 150ms all ease-in-out;
+
+			p {
+				margin: 0;
+			}
+
+			a {
+				padding-top: 3rem;
+				color: $accent-light;
+				font-weight: bold;
+				text-decoration: underline;
+			}
 		}
 	}
 }

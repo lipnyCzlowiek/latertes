@@ -168,16 +168,15 @@ layout: default
 						najmu skłąda się wiele czynników, takich jak: ilość
 						elementów, czas wynajmu, lokalizacja czy konieczność
 						transportu i montażu.
-						<a href="#kontakt"
-							>Skontaktuj się już teraz w celu otrzymania
-							wyceny!</a
-						>
 					</p>
+					<a href="#kontakt"
+						>Skontaktuj się już teraz w celu otrzymania wyceny!</a
+					>
 				</div>
 			</li>
 			<li>
 				<button class="faq__question btn">
-					Jak policzyć powierzchnie?
+					Jak policzyć powierzchnie?<i class="fas fa-angle-right"></i>
 				</button>
 				<div class="faq__answer">
 					<p>
@@ -193,7 +192,9 @@ layout: default
 			</li>
 			<li>
 				<button class="faq__question btn">
-					Czy rusztowanie jest bezpieczne?
+					Czy rusztowanie jest bezpieczne?<i
+						class="fas fa-angle-right"
+					></i>
 				</button>
 				<div class="faq__answer">
 					<p>
@@ -207,13 +208,16 @@ layout: default
 					<a
 						href="https://www.scaff.pl/do_pobrania/SL70_Instrukcja_montazu_i_uzytkowania.pdf"
 						target="_blank"
-						>Instrukcja montażu i użytkowania - Plettac SL70</a
+						><i class="fas fa-file-download"></i> Instrukcja montażu
+						i użytkowania - Plettac SL70</a
 					>
 				</div>
 			</li>
 			<li>
 				<button class="faq__question btn">
-					Czy są jakieś ograniczenia dotyczące transportu i montażu?
+					Czy są jakieś ograniczenia dotyczące transportu i montażu?<i
+						class="fas fa-angle-right"
+					></i>
 				</button>
 				<div class="faq__answer">
 					<p>
@@ -225,7 +229,9 @@ layout: default
 			</li>
 			<li>
 				<button class="faq__question btn">
-					Czy konieczna jest wpłata kaucji?
+					Czy konieczna jest wpłata kaucji?<i
+						class="fas fa-angle-right"
+					></i>
 				</button>
 				<div class="faq__answer">
 					<p>
@@ -238,7 +244,7 @@ layout: default
 			</li>
 			<li>
 				<button class="faq__question btn">
-					Jak wygląda umowa najmu?
+					Jak wygląda umowa najmu?<i class="fas fa-angle-right"></i>
 				</button>
 				<div class="faq__answer">
 					<p>
@@ -252,7 +258,7 @@ layout: default
 			<li>
 				<button class="faq__question btn">
 					Czy możliwe jest przedłużenie najmu po wygaśnięciu
-					pierwotnej umowy?
+					pierwotnej umowy?<i class="fas fa-angle-right"></i>
 				</button>
 				<div class="faq__answer">
 					<p>
@@ -266,18 +272,25 @@ layout: default
 			</li>
 		</ul>
 		<script>
-			var acc = document.getElementsByClassName('faq__question btn');
+			const acc = document.getElementsByClassName('faq__question btn');
 			var i;
 
 			for (i = 0; i < acc.length; i++) {
 				acc[i].addEventListener('click', function() {
-					this.classList.toggle('active');
-					var panel = this.nextElementSibling;
-					if (panel.style.display === 'block') {
-						panel.style.display = 'none';
-					} else {
-						panel.style.display = 'block';
+					const questions = document.getElementsByClassName(
+						'faq__question',
+					);
+					for (let index = 0; index < questions.length; index++) {
+						const element = questions[index];
+
+						if (element === this) {
+							continue;
+						}
+
+						element.classList.remove('active');
 					}
+
+					this.classList.toggle('active');
 				});
 			}
 		</script>
