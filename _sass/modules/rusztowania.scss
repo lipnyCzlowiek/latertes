@@ -46,7 +46,7 @@
 
 				& + .faq__answer {
 					padding: 1rem calc(1rem + 14px);
-					height: 160px;
+					height: 140px;
 				}
 			}
 		}
@@ -57,7 +57,7 @@
 			display: block;
 
 			font-family: 'Rubik', sans-serif;
-			background: rgba(255, 255, 255, 0.1);
+			background: rgba(255, 255, 255, 0.05);
 			backdrop-filter: blur(6px);
 
 			font-size: 14px;
@@ -70,6 +70,8 @@
 			}
 
 			a {
+				position: relative;
+				top: 0.5rem;
 				padding-top: 3rem;
 				color: $accent-light;
 				font-weight: bold;
