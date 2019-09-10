@@ -32,12 +32,12 @@ $color-white: #eaeaea;
 		justify-content: space-between;
 		align-items: center;
 
-		height: 70px;
+		height: 80px;
 	}
 
 	&__logo {
 		img {
-			height: 42px;
+			height: 48px;
 			width: auto;
 		}
 	}
@@ -46,15 +46,11 @@ $color-white: #eaeaea;
 		font-family: 'Rubik', sans-serif;
 
 		li {
-			padding: 0.25rem 0.5rem;
+			padding: 0.25rem 1rem;
 			color: $color-white;
 			opacity: 0.65;
 			letter-spacing: 2px;
 			transition: all 150ms ease-out;
-
-			&:last-of-type {
-				padding-right: 0;
-			}
 
 			&.active {
 				opacity: 1;
@@ -86,6 +82,19 @@ $color-white: #eaeaea;
 	color: $color-white;
 
 	font-family: 'Roboto', sans-serif;
+
+	h1 {
+		font-family: 'Roboto', sans-serif;
+
+		font-size: 2em;
+		text-transform: uppercase;
+		margin: 0 0 8rem;
+
+		span {
+			opacity: 0.75;
+			font-weight: 300;
+		}
+	}
 
 	h2 {
 		font-weight: 500;
