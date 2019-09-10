@@ -46,7 +46,7 @@ $color-white: #eaeaea;
 		font-family: 'Rubik', sans-serif;
 
 		li {
-			padding: 0 0.5rem;
+			padding: 0.25rem 0.5rem;
 			color: $color-white;
 			opacity: 0.65;
 			letter-spacing: 2px;
@@ -71,7 +71,6 @@ $color-white: #eaeaea;
 		.phone-label {
 			background: #e41b23;
 			color: #fff;
-			border-radius: 1px;
 			margin-left: 1rem;
 			padding: 0.25rem 0.5rem;
 		}

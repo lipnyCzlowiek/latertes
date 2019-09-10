@@ -27,14 +27,14 @@ layout: default
 		<div class="container">
 			<h2>Wynajem <br />rusztowań ramowych</h2>
 			<h4>Transport oraz montaż dostępny na terenie całego kraju</h4>
-			<a href="#uslugi" class="btn btn-accent-light">
+			<a href="#o-firmie" class="btn btn-accent-light">
 				Dowiedz się więcej o naszej firmie
 			</a>
 		</div>
 	</div>
 </section>
 <!-- About section -->
-<section class="section about-section black-on-white">
+<section id="o-firmie" class="section about-section black-on-white">
 	<div class="container">
 		<h1 class="section__title">O firmie</h1>
 		<div class="row">
@@ -152,14 +152,16 @@ layout: default
 </section>
 
 <!-- FAQ section -->
-<section>
+<section class="section faq-section">
 	<div class="container">
-		<h2 class="seciton__title">
+		<h2 class="section__title">
 			Najczęściej zadawane pytania (FAQ)
 		</h2>
 		<ul class="faq">
 			<li>
-				<button class="faq__question">Ile kosztuje wynajem?</button>
+				<button class="faq__question btn">
+					Ile kosztuje wynajem?<i class="fas fa-angle-right"></i>
+				</button>
 				<div class="faq__answer">
 					<p>
 						Wycena zlecenia dokonywana jest indywidualnie. Na kwotę
@@ -174,7 +176,7 @@ layout: default
 				</div>
 			</li>
 			<li>
-				<button class="faq__question">
+				<button class="faq__question btn">
 					Jak policzyć powierzchnie?
 				</button>
 				<div class="faq__answer">
@@ -190,7 +192,7 @@ layout: default
 				</div>
 			</li>
 			<li>
-				<button class="faq__question">
+				<button class="faq__question btn">
 					Czy rusztowanie jest bezpieczne?
 				</button>
 				<div class="faq__answer">
@@ -210,7 +212,7 @@ layout: default
 				</div>
 			</li>
 			<li>
-				<button class="faq__question">
+				<button class="faq__question btn">
 					Czy są jakieś ograniczenia dotyczące transportu i montażu?
 				</button>
 				<div class="faq__answer">
@@ -222,7 +224,7 @@ layout: default
 				</div>
 			</li>
 			<li>
-				<button class="faq__question">
+				<button class="faq__question btn">
 					Czy konieczna jest wpłata kaucji?
 				</button>
 				<div class="faq__answer">
@@ -235,7 +237,7 @@ layout: default
 				</div>
 			</li>
 			<li>
-				<button class="faq__question">
+				<button class="faq__question btn">
 					Jak wygląda umowa najmu?
 				</button>
 				<div class="faq__answer">
@@ -248,7 +250,7 @@ layout: default
 				</div>
 			</li>
 			<li>
-				<button class="faq__question">
+				<button class="faq__question btn">
 					Czy możliwe jest przedłużenie najmu po wygaśnięciu
 					pierwotnej umowy?
 				</button>
@@ -264,7 +266,7 @@ layout: default
 			</li>
 		</ul>
 		<script>
-			var acc = document.getElementsByClassName('faq__question');
+			var acc = document.getElementsByClassName('faq__question btn');
 			var i;
 
 			for (i = 0; i < acc.length; i++) {

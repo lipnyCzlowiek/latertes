@@ -1,5 +1,10 @@
 .section {
+	padding: 4rem 0 8rem;
+
 	&__title {
+		margin-top: 0;
+		margin-bottom: 4rem;
+
 		font-family: 'Roboto', sans-serif;
 		letter-spacing: 1px;
 		text-transform: uppercase;
