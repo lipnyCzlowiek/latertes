@@ -7,7 +7,7 @@ layout: default
 		<div class="container">
 			<div class="page-header__logo">
 				<img
-					src="/assets/images/lateres__logo--white.png"
+					src="/assets/images/lateres__logo--white-sd.png"
 					alt="Lateres brand logo"
 				/>
 			</div>
@@ -297,21 +297,29 @@ layout: default
 </section>
 
 <!-- Contact section -->
-<section>
+<section class="section contact-section">
 	<div class="container">
 		<h2 class="section__title">Kontakt</h2>
 		<div class="row">
-			<div class="col-md-6">
+			<div class="col-md-6 left-col">
+				<!-- <div class="contact-tip">
+					<p>
+						Skontaktuj się z nami bezpośrednio <br />
+						lub skorzystaj z formularza kontaktowego
+					</p>
+				</div> -->
 				<address class="addr">
-					<p class="addr_line">Ulica, nr domu</p>
-					<p class="addr_line">Kod pocztowy, miasto</p>
-					<p class="addr_line">Wojewodztwo</p>
+					<p class="addr_line" style="margin-top: 0;">Lateres</p>
+					<p class="addr_line">Nektarowa 17</p>
+					<p class="addr_line">60-185, Skórzewo</p>
 				</address>
-				<p>+48 123 456 789</p>
-				<p>rusztowania@lateres.pl</p>
+				<div class="contact-details">
+					<p>+48 695 719 300</p>
+					<p>kontakt@lateres.pl</p>
+				</div>
 			</div>
-			<div class="col-md-6">
-				<form action="">
+			<div class="col-md-6 right-col">
+				<form class="contact-form" action="">
 					<input
 						type="text"
 						name="person"
@@ -329,7 +337,9 @@ layout: default
 			</div>
 		</div>
 	</div>
+</section>
 
+<section>
 	<div id="map" style="height: 400px; width: 100%"></div>
 	<script>
 		function initMap() {
@@ -339,7 +349,10 @@ layout: default
 				center: pos,
 				disableDefaultUI: true,
 			});
-			const marker = new google.maps.Marker({position: pos, map: map});
+			const marker = new google.maps.Marker({
+				position: pos,
+				map: map,
+			});
 		}
 	</script>
 	<script
@@ -349,41 +362,49 @@ layout: default
 	></script>
 </section>
 
-<footer>
-	<div class="row">
-		<div class="col">
-			<img src="" alt="Lateres brand logo" />
-			<h3>Architektura i budownictwo to nasza życiowa droga i pasja</h3>
-		</div>
-		<div class="col">
-			<h3>Kontakt</h3>
-			<p>
-				<span><i class="fas fa-map-marker-alt"></i></span>
-				Ulica, nr domu
-			</p>
-			<p>
-				<span></span>
-				Miasto, Województwo
-			</p>
-			<p>
-				<span><i class="fas fa-phone"></i></span>
-				+48 123 456 789
-			</p>
-			<p>
-				<span><i class="fas fa-at"></i></span> rusztowania@lateres.pl
-			</p>
-		</div>
-		<div class="col">
-			<h3>Menu</h3>
-			<nav>
-				<ul>
-					<li>Home</li>
-					<li>O firmie</li>
-					<li>Oferta</li>
-					<li>FAQ</li>
-					<li>Kontakt</li>
-				</ul>
-			</nav>
+<footer class="section footer-section">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 footer-col">
+				<img
+					src="/assets/images/lateres__logo--white-hd.png"
+					alt="Lateres brand logo"
+					height="128"
+				/>
+				<!-- <h3>
+							Architektura i budownictwo to nasza życiowa droga i pasja
+						</h3> -->
+			</div>
+			<div class="col-md-3 footer-col">
+				<h3>Menu</h3>
+				<nav>
+					<ul>
+						<li>Home</li>
+						<li>O firmie</li>
+						<li>Oferta</li>
+						<li>FAQ</li>
+						<li>Kontakt</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="col-md-3 footer-col">
+				<h3>Kontakt</h3>
+				<p>
+					Lateres
+				</p>
+				<p>
+					Ulica, nr domu
+				</p>
+				<p>
+					Miasto, Województwo
+				</p>
+				<p>
+					+48 123 456 789
+				</p>
+				<p>
+					rusztowania@lateres.pl
+				</p>
+			</div>
 		</div>
 	</div>
 </footer>

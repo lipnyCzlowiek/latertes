@@ -80,3 +80,93 @@
 		}
 	}
 }
+
+.contact-section {
+	font-family: 'Rubik', sans-serif;
+	padding-bottom: 6rem;
+
+	&__content {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+	}
+
+	.left-col {
+		// display: flex;
+		// flex-direction: column;
+		// justify-content: space-between;
+		font-family: 'Rubik', sans-serif;
+		font-weight: bold;
+		letter-spacing: 1px;
+	}
+
+	.addr {
+		font-style: normal;
+		margin-bottom: 2rem;
+		text-transform: uppercase;
+	}
+
+	.contact-details {
+	}
+
+	p {
+		margin: 0.5rem 0;
+		font-size: 18px;
+	}
+
+	.contact-form {
+		input:first-of-type {
+			margin-top: 0;
+		}
+
+		input,
+		textarea {
+			padding: 8px;
+			margin: 8px 0;
+			border: 1px solid #222;
+		}
+
+		input[type='submit'] {
+			background: #222;
+			border: none;
+			color: #fff;
+			font-family: 'Rubik', sans-serif;
+		}
+	}
+}
+
+.footer-section {
+	background: #111;
+	color: #fff;
+	font-family: 'Rubik';
+
+	.footer-col {
+		padding: 0 1rem;
+
+		h3 {
+			margin: 0 0 2rem;
+		}
+	}
+
+	img {
+		margin-bottom: 2rem;
+		width: 256px;
+		height: auto;
+	}
+	h3 {
+		font-size: 16px;
+		opacity: 0.6;
+	}
+
+	ul {
+		margin: 0;
+		padding: 0;
+
+		li {
+			display: block;
+			margin: 1rem 0;
+		}
+	}
+}
