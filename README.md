@@ -8,4 +8,4 @@ Install Jekyll for Windows: https://jekyllrb.com/docs/installation/windows/
 Run terminal, cd into your lateres dir and run 'jekyll serve'
 
 ## Build and deployment
-Run 'jekyll build'
+Run 'jekyll build'. If successful, static website files will be published to _site dir.
